@@ -9,7 +9,7 @@
         public string? Avatar { get; set; }
         public string FullName => $"{FirstName} {LastName}";
 
-        private const string DefaultAvatar = "/images/defaultImage.jpg";
+        private const string DefaultAvatar = "/images/defaultAvatar.jpg";
 
         public User()
         {

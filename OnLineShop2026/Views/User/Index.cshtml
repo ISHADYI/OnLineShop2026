@@ -1,0 +1,13 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<div class="text-center">
+    <h1>Профиль</h1>
+    <div class="d-flex flex-column align-items-center gap-2">
+        <img style="width: 10rem; height: 10rem;" src="@Model.Avatar" alt="Аватарка пользователя" />
+        <h4>@Model.FullName</h4>
+        <p>@Model.Email</p>
+    </div>
+</div>
