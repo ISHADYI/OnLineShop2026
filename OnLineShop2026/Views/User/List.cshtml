@@ -1,0 +1,27 @@
+﻿@model List<User>
+
+@{
+    ViewData["Title"] = "Список пользователей";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Все пользователи</h2>
+
+    <div class="row">
+        @foreach (var user in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="@user.Avatar"
+                         class="rounded-circle mx-auto mb-3"
+                         style="width: 100px; height: 100px; object-fit: cover;" />
+
+                    <h5>@user.FullName</h5>
+                    <p class="text-muted">@user.Email</p>
+
+                    <button class="btn btn-outline-primary btn-sm">Подробнее</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
